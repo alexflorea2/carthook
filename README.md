@@ -47,5 +47,5 @@ Please run the following
 composer install
 composer dump-autoload
 php artisan migrate
-php api:cache
+php artisan api:cache
 ```
