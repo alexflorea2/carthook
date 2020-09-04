@@ -29,6 +29,15 @@ The code is separated in Models, Repositories and Services. Database wise, all e
 
 The Api is versioned under ```/v1``` prefix;
 
+#### Improvements
+ In Production we can add another caching layer via Ngnix or Varnish, so that we minimize hitting the DB.
+ 
+ The endpoints should have an IP based throttle.
+ 
+ Logging could be an external service, so that admins could see potential errors easier.
+ 
+ A mechanism for regular caching from the remote Api can be implemented and run via a cronjob.
+
 #### Endpoints
 ```
 GET /user?page={int}&show={int}&search={string}
